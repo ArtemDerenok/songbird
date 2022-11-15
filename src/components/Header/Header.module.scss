@@ -1,0 +1,44 @@
+@import "../../variables";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.top_panel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &_logo {
+    min-width: 200px;
+    min-height: 55px;
+    background-image: url(../../assets/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &_score {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  border-radius: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-top: 15;
+
+  &_item {
+    padding: 0.5rem 0.75rem;
+    flex-grow: 1;
+    text-align: center;
+    background-color: $green_simple;
+  }
+}
