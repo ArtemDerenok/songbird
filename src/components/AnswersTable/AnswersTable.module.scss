@@ -1,0 +1,21 @@
+@import "../../variables";
+
+.list {
+  list-style-type: none;
+  background-color: $gray;
+  border-radius: 5px;
+  border-top: 1px solid $gray_light;
+  border-left: 1px solid $gray_light;
+
+  li {
+    padding: 10px 10px 10px 30px;
+    border-right: 1px solid $gray_light;
+    border-bottom: 1px solid $gray_light;
+    border-radius: 5px;
+  }
+
+  li:hover {
+    background-color: $gray_active;
+    cursor: pointer;
+  }
+}
