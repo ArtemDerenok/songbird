@@ -1,0 +1,19 @@
+@import "../../variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.answers_table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  ul,
+  section {
+    flex-grow: 1;
+  }
+}
