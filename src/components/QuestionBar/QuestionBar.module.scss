@@ -1,0 +1,15 @@
+@import "../../variables";
+
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: $gray;
+
+  img {
+    border-radius: 20px;
+    padding: 10px;
+  }
+}
