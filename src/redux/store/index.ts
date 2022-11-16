@@ -4,4 +4,6 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 const store = createStore(questionsReducer, composeWithDevTools());
 
+export type RootState = ReturnType<typeof questionsReducer>
+
 export default store;
