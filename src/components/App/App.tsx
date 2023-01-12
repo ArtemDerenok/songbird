@@ -11,6 +11,10 @@ function App() {
     setAttemptsAnswer(attemptsAnswer - 1);
   }, [attemptsAnswer]);
 
+  const resetScore = () => {
+    setScore(0);
+  };
+
   const changeScore = useCallback(() => {
     setScore(score + attemptsAnswer);
     setAttemptsAnswer(5);
@@ -22,6 +26,7 @@ function App() {
       <Main
         changeAttemtsAnswer={changeAttemtsAnswer}
         changeScore={changeScore}
+        resetScore={resetScore}
       />
     </div>
   );

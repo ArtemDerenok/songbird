@@ -10,12 +10,14 @@ interface INextLevelBtn {
   isRightAnswer: boolean;
   changeIsRightAnswer: () => void;
   changeRightAnswerId: () => void;
+  resetScore: () => void;
 }
 
 const NextLevelBtn = ({
   isRightAnswer,
   changeIsRightAnswer,
   changeRightAnswerId,
+  resetScore,
 }: INextLevelBtn) => {
   const dispatch = useDispatch();
   const round = useTypeSelector((state) => state.round);
@@ -33,6 +35,7 @@ const NextLevelBtn = ({
 
           if (round === 5) {
             dispatch(resetRoundActionCreator());
+            resetScore();
           } else {
             dispatch(changeRoundActionCreator());
           }

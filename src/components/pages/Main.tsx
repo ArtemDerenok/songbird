@@ -10,9 +10,10 @@ import getRandomNum from "./../../utils/utils";
 interface IMain {
   changeAttemtsAnswer: () => void;
   changeScore: () => void;
+  resetScore: () => void;
 }
 
-const Main = ({ changeAttemtsAnswer, changeScore }: IMain) => {
+const Main = ({ changeAttemtsAnswer, changeScore, resetScore }: IMain) => {
   const [birdInfo, setBirdInfo] = useState<IBirdInfo>({
     bird: {
       id: 0,
@@ -76,6 +77,7 @@ const Main = ({ changeAttemtsAnswer, changeScore }: IMain) => {
         isRightAnswer={isRightAnswer}
         changeIsRightAnswer={changeIsRightAnswer}
         changeRightAnswerId={changeRightAnswerId}
+        resetScore={resetScore}
       />
     </main>
   );
