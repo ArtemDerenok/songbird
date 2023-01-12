@@ -12,7 +12,10 @@
   justify-content: space-between;
   margin-bottom: 20px;
 
-  ul,
+  ul {
+    flex-grow: 3;
+  }
+
   section {
     flex-grow: 1;
   }
