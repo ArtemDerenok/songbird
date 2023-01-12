@@ -12,3 +12,8 @@
     cursor: pointer;
   }
 }
+
+.active {
+  background-color: $green_active;
+  border: 1px solid $gray_active;
+}
