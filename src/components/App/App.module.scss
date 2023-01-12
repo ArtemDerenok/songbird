@@ -5,4 +5,8 @@
   max-width: 70%;
   color: $white;
   margin-top: 15px;
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    max-width: 100%;
+  }
 }
